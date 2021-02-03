@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tour: MyString
+  location: MyString
+  venue: MyString
+  venue_page: MyString
+  date: 2021-02-03
+  ticket_purchase_page: MyString
+  photo: MyString
+  artist: one
+  genre: one
+
+two:
+  tour: MyString
+  location: MyString
+  venue: MyString
+  venue_page: MyString
+  date: 2021-02-03
+  ticket_purchase_page: MyString
+  photo: MyString
+  artist: two
+  genre: two
