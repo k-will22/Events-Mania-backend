@@ -15,9 +15,24 @@ class UsersController < ApplicationController
             {username: params[:username], 
             password: params[:password], 
             location: params[:location],
-            fav_artists: params[:fav_artists],
-            fav_genres: params[:fav_genres],
             can_verify: params[:can_verify]})
         render json: user
+    end
+
+    def edit 
+        user = User.find(params[:id])
+        render json: user
+      end
+
+    def update
+        user = User.find(params[:id])
+        user.update(user_params)
+        render json: user
+    end
+
+    private
+
+    def user_params
+        params.require(:user).permit(:location)
     end
 end
