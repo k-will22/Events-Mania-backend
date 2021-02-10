@@ -11,17 +11,37 @@ class EventsController < ApplicationController
     end 
 
     def create
-        event = Event.create(
-            {tour: params[:tour], 
-            location: params[:location], 
-            venue: params[:venue],
-            venue_page: params[:venue_page],
-            date: params[:date],
-            ticket_purchase_page: params[:ticket_purchase_page],
-            photo: params[:photo],
-            band_page: params[:band_page],
-            artist_id: params[:artist_id],
-            genre_id: params[:genre_id]})
+        event = Event.create(event_params)
         render json: event
     end
+
+    def edit 
+        event = Event.find(params[:id])
+        render json: event
+      end
+
+    def update
+        event = Event.find(params[:id])
+        event.update(event_params)
+        render json: event
+    end
+
+    private 
+
+    def event_params
+        params.require(:event).permit(
+            :tour, 
+            :location, 
+            :venue, 
+            :venue_page, 
+            :date, 
+            :ticket_purchase_page, 
+            :photo,
+            :band_page,
+            :verified,
+            :artist_id,
+            :genre_id
+        )
+    end
+
 end

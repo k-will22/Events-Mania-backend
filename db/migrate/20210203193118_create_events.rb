@@ -8,6 +8,7 @@ class CreateEvents < ActiveRecord::Migration[6.0]
       t.date :date
       t.string :ticket_purchase_page
       t.string :photo
+      t.boolean :verified
       t.belongs_to :artist, null: false, foreign_key: true
       t.belongs_to :genre, null: false, foreign_key: true
 

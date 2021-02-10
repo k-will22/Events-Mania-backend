@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2021_02_06_022100) do
     t.date "date"
     t.string "ticket_purchase_page"
     t.string "photo"
+    t.boolean "verified"
     t.bigint "artist_id", null: false
     t.bigint "genre_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -82,7 +83,7 @@ ActiveRecord::Schema.define(version: 2021_02_06_022100) do
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "location"
-    t.string "password"
+    t.string "password_digest"
     t.boolean "can_verify"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
