@@ -41,6 +41,12 @@ artist27 = Artist.create(name: "CMA Fest")
 artist28 = Artist.create(name: "Austin City Limits")
 artist29 = Artist.create(name: "Passenger")
 artist30 = Artist.create(name: "Lady Gaga")
+artist31 = Artist.create(name: "5 Seconds Of Summer")
+artist32 = Artist.create(name: "Aerosmith")
+artist33 = Artist.create(name: "Goo Goo Dolls")
+artist34 = Artist.create(name: "New Kids on the Block")
+artist35 = Artist.create(name: "Dan + Shay")
+artist36 = Artist.create(name: "My Chemical Romance")
 
 user1 = User.create(username: "Keith", location: "New York", password: "123", can_verify: false)
 user2 = User.create(username: "admin", location: "New York", password: "123", can_verify: true)
@@ -109,7 +115,7 @@ artist: artist12, band_page: "https://www.chrisstapleton.com/", genre: genre4, v
 event19 = Event.create(tour: "Love On Tour", location: "New York", venue: "Madison Square Garden", venue_page: "https://www.msg.com/", date: "2021-10-3", ticket_purchase_page: "https://www.ticketmaster.com/harry-styles-tickets/artist/2366444", 
 photo: "https://media.npr.org/assets/img/2020/02/27/wide-use_hpromophoto_helenepambrun-72fdb64792139d94a06f18686d0bb3131a238a70-s800-c85.jpg", 
 artist: artist13, band_page: "https://hstyles.co.uk/", genre: genre2, verified: true)
-event20 = Event.create(tour: "Bigger Love Tour", location:"New York", venue: "Radio City Music Hall", venue_page: "https://www.msg.com/radio-city-music-hall", date: "2021-8-23", ticket_purchase_page: "https://www.ticketmaster.com/john-legend-tickets/artist/936461", 
+event20 = Event.create(tour: "Bigger Love Tour", location: "New York", venue: "Radio City Music Hall", venue_page: "https://www.msg.com/radio-city-music-hall", date: "2021-8-23", ticket_purchase_page: "https://www.ticketmaster.com/john-legend-tickets/artist/936461", 
 photo: "https://media.wonderlandmagazine.com/uploads/2020/04/Wonderland_John_Legend_FEB_17_20200104_V1.jpg", 
 artist: artist14, band_page: "https://www.johnlegend.com/", genre: genre6, verified: true)
 event21 = Event.create(tour: "After Hours Tour", location: "New York", venue: "Madison Square Garden", venue_page: "https://www.msg.com/", date: "2021-9-2", ticket_purchase_page: "https://www.ticketmaster.com/the-weeknd-tickets/artist/1697014", 
@@ -175,4 +181,49 @@ artist: artist29, band_page: "https://passengermusic.com/", genre: genre2, verif
 event41 = Event.create(tour: "The Chromatica Ball Tour", location: "Boston", venue: "Fenway Park", venue_page: "https://www.mlb.com/redsox/ballpark", date: "2021-8-7", ticket_purchase_page: "https://www.ticketmaster.com/lady-gaga-tickets/artist/1249444", 
 photo: "https://media.vogue.co.uk/photos/5e9ac3d5b1ee260008a44336/master/w_4716,c_limit/19-Lady-Gaga-Performance-Outfits-vogue-160420-credit-Getty-Images.jpg", 
 artist: artist30, band_page: "https://www.ladygaga.com/", genre: genre2, verified: true)
+event42 = Event.create(tour: "2021 Tour", location: "Boston", venue: "Fenway Park", venue_page: "https://www.mlb.com/redsox/ballpark", date: "2021-9-12", ticket_purchase_page: "https://www.ticketmaster.com/maroon-5-tickets/artist/824144", 
+photo: "https://www.lejournallive.com/wp-content/uploads/2019/02/leVINE-1-900x600.jpg", 
+artist: artist21, band_page: "https://www.maroon5.com/", genre: genre2, verified: true)
+event43 = Event.create(tour: "Summer Tour 2021", location: "Boston", venue: "Agganis Arena", venue_page: "https://www.agganisarena.com/", date: "2021-8-23", ticket_purchase_page: "https://www.ticketmaster.com/deftones-tickets/artist/777416", 
+photo: "https://metalinjection.net/wp-content/uploads/2020/03/deftones-chinomoreno.jpg", 
+artist: artist18, band_page: "https://www.deftones.com/", genre: genre1, verified: true)
+event44 = Event.create(tour: "A Tribute to Kings Tour", location: "Boston", venue: "Rockland Trust Bank Pavilion", venue_page: "https://www.livenation.com/venue/KovZpZAEAdEA/rockland-trust-bank-pavilion-events", date: "2021-7-6", ticket_purchase_page: "https://www.ticketmaster.com/primus-tickets/artist/735894", 
+photo: "https://townsquare.media/site/366/files/2016/12/Primus-5369.jpg", 
+artist: artist22, band_page: "http://www.primusville.com/", genre: genre1, verified: true)
+event45 = Event.create(tour: "After Hours Tour", location: "Boston", venue: "TD Garden", venue_page: "https://www.tdgarden.com/", date: "2022-2-8", ticket_purchase_page: "https://www.ticketmaster.com/the-weeknd-tickets/artist/1697014", 
+photo: "https://pbs.twimg.com/media/Et5WEtWXAAkRypp.jpg", 
+artist: artist15, band_page: "https://www.theweeknd.com/", genre: genre6, verified: true)
+event46 = Event.create(tour: "No Shame 2021 Tour", location: "Boston", venue: "Rockland Trust Bank Pavilion", venue_page: "https://www.livenation.com/venue/KovZpZAEAdEA/rockland-trust-bank-pavilion-events", date: "2021-6-1", ticket_purchase_page: "https://www.ticketmaster.com/5-seconds-of-summer-tickets/artist/1778118", 
+photo: "https://www.rollingstone.com/wp-content/uploads/2020/01/5-seconds-of-summer.jpg?resize=1800,1200&w=1800", 
+artist: artist31, band_page: "https://www.5sos.com/", genre: genre2, verified: true)
+event47 = Event.create(tour: "50th Anniversary Show", location: "Boston", venue: "Fenway Park", venue_page: "https://www.mlb.com/redsox/ballpark", date: "2021-9-14", ticket_purchase_page: "https://www.ticketmaster.com/aerosmith-tickets/artist/734396", 
+photo: "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fdam%2Fimageserve%2F1020457152%2F0x0.jpg%3Ffit%3Dscale", 
+artist: artist32, band_page: "https://www.aerosmith.com/", genre: genre1, verified: true)
+event48 = Event.create(tour: "World Tour 2021", location: "Boston", venue: "TD Garden", venue_page: "https://www.tdgarden.com/", date: "2021-7-8", ticket_purchase_page: "https://www.ticketmaster.com/justin-bieber-tickets/artist/1369961", 
+photo: "https://media.newyorker.com/photos/5e2b598351d1330009001749/4:3/w_1899,h_1424,c_limit/Fry-JustinBieberDocuseries.jpg", 
+artist: artist16, band_page: "https://www.justinbiebermusic.com/", genre: genre2, verified: true)
+event49 = Event.create(tour: "Miracle Pill Tour", location: "Boston", venue: "Rockland Trust Bank Pavilion", venue_page: "https://www.livenation.com/venue/KovZpZAEAdEA/rockland-trust-bank-pavilion-events", date: "2021-8-18", ticket_purchase_page: "https://www.ticketmaster.com/goo-goo-dolls-tickets/artist/735190", 
+photo: "https://bloximages.chicago2.vip.townnews.com/buffalonews.com/content/tncms/assets/v3/editorial/5/ff/5ff2ae5b-f74c-5d63-a0fe-d86053bb1b2d/5ef1411e378c9.image.jpg?resize=1200%2C776", 
+artist: artist33, band_page: "https://www.googoodolls.com/", genre: genre1, verified: true)
+event50 = Event.create(tour: "Bigger Love Tour", location: "Boston", venue: "Rockland Trust Bank Pavilion", venue_page: "https://www.livenation.com/venue/KovZpZAEAdEA/rockland-trust-bank-pavilion-events", date: "2021-8-30", ticket_purchase_page: "https://www.ticketmaster.com/john-legend-tickets/artist/936461", 
+photo: "https://media.wonderlandmagazine.com/uploads/2020/04/Wonderland_John_Legend_FEB_17_20200104_V1.jpg", 
+artist: artist14, band_page: "https://www.johnlegend.com/", genre: genre6, verified: true)
+event51 = Event.create(tour: "NKOTBOSTON", location: "Boston", venue: "Fenway Park", venue_page: "https://www.mlb.com/redsox/ballpark", date: "2021-7-16", ticket_purchase_page: "https://www.ticketmaster.com/new-kids-on-the-block-tickets/artist/735744", 
+photo: "https://arc-anglerfish-arc2-prod-bostonglobe.s3.amazonaws.com/public/25AYJ2CQBQI6JL5USYCSJQN72I.jpg", 
+artist: artist34, band_page: "https://www.nkotb.com/", genre: genre2, verified: true)
+event52 = Event.create(tour: "Love On Tour", location: "Boston", venue: "TD Garden", venue_page: "https://www.tdgarden.com/", date: "2021-10-25", ticket_purchase_page: "https://www.ticketmaster.com/harry-styles-tickets/artist/2366444", 
+photo: "https://media.npr.org/assets/img/2020/02/27/wide-use_hpromophoto_helenepambrun-72fdb64792139d94a06f18686d0bb3131a238a70-s800-c85.jpg", 
+artist: artist13, band_page: "https://hstyles.co.uk/", genre: genre2, verified: true)
+event53 = Event.create(tour: "The (Arena) Tour", location: "Boston", venue: "TD Garden", venue_page: "https://www.tdgarden.com/", date: "2021-12-7", ticket_purchase_page: "https://www.ticketmaster.com/dan-shay-tickets/artist/1955592", 
+photo: "https://www.gannett-cdn.com/presto/2019/08/28/PNAS/dba3d7d4-e643-4ef5-85e0-0afb87a4b08b-03c-Dan__Shay.JPG", 
+artist: artist35, band_page: "https://www.danandshay.com/", genre: genre4, verified: true)
+event54 = Event.create(tour: "The (Arena) Tour", location: "New York", venue: "Madison Square Garden", venue_page: "https://www.msg.com/", date: "2021-9-16", ticket_purchase_page: "https://www.ticketmaster.com/dan-shay-tickets/artist/1955592", 
+photo: "https://www.gannett-cdn.com/presto/2019/08/28/PNAS/dba3d7d4-e643-4ef5-85e0-0afb87a4b08b-03c-Dan__Shay.JPG", 
+artist: artist35, band_page: "https://www.danandshay.com/", genre: genre4, verified: true)
+event55 = Event.create(tour: "Reunion Tour", location: "Boston", venue: "TD Garden", venue_page: "https://www.tdgarden.com/", date: "2021-9-13", ticket_purchase_page: "https://www.ticketmaster.com/my-chemical-romance-tickets/artist/859324", 
+photo: "https://www.rollingstone.com/wp-content/uploads/2020/01/MCR-tour.jpg", 
+artist: artist36, band_page: "https://www.mychemicalromance.com/", genre: genre1, verified: true)
+event56 = Event.create(tour: "Reunion Tour", location: "New York", venue: "Barclays Center", venue_page: "https://www.barclayscenter.com/", date: "2021-9-11", ticket_purchase_page: "https://www.ticketmaster.com/my-chemical-romance-tickets/artist/859324", 
+photo: "https://www.rollingstone.com/wp-content/uploads/2020/01/MCR-tour.jpg", 
+artist: artist36, band_page: "https://www.mychemicalromance.com/", genre: genre1, verified: true)
 
